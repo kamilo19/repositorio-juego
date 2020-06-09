@@ -1,0 +1,23 @@
+{
+  "name": "repositorio-juego-1",
+  "version": "1.0.0",
+  "description": "phaser",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kamilo19/repositorio-juego.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kamilo19/repositorio-juego/issues"
+  },
+  "homepage": "https://github.com/kamilo19/repositorio-juego#readme",
+  "dependencies": {
+    "phaser": "^3.23.0"
+  }
+}
