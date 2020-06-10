@@ -2,8 +2,9 @@ const config = {
     width: 320*2,
     height: 180*2,
     parente: "container",
-    type: Phaser.AUTO,
-    scene: {
+    type: Phaser.CANVAS,
+    backgroundColor: '#298111',
+    scene:{ 
         preload: preload,
         create: create,
         update: update,
