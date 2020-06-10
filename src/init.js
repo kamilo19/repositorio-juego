@@ -13,7 +13,7 @@ const config = {
 var game = new Phaser.Game(config);
 
 function preload () {
-    this.load.image("persona2", "./assets/persona2.jpg");
+    this.load.image("persona2", "./assets/persona2.png");
 }
 function create () {
    this.persona2 = this.add.image(100,50, "persona2");
