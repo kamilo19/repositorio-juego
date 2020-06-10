@@ -2,7 +2,7 @@ const config = {
     width: 320*2,
     height: 180*2,
     parente: "container",
-    type: Phaser.CANVAS,
+    type: Phaser.AUTO,
     backgroundColor: '#298111',
     scene:{ 
         preload: preload,
@@ -11,13 +11,15 @@ const config = {
     }
 }
 
+
 var game = new Phaser.Game(config);
 
 function preload () {
     this.load.image("persona2", "./assets/persona2.png");
 }
+
 function create () {
-   this.persona2 = this.add.image(100,50, "persona2");
+   this.persona2 = this.add.image(60,50, "persona2");
    this.input.keyboard.on("keydown_RIGHT", () => {
        this.persona2.setAngle(90);
        this.persona2.x++;
@@ -35,6 +37,6 @@ function create () {
        this.persona2.y++;
    });
 }
+
 function update (time, delta){
-    
 }
