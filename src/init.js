@@ -10,6 +10,14 @@ const config = {
         preload: preload,
         create: create,
         update: update,
+    },
+    physics: {
+        default :"arcade",
+        arcade: {
+            gravity: {
+                
+            }
+        }
     }
 }
 // gracias a scene se pinta el lienzo en el html 
@@ -22,7 +30,8 @@ function preload () {
 //En la funcion Preload es para agregar una imagen la cual se pueda interactuar
 //la "persona2" es la figura la cual se cargara en el lienzo 
 function create () {
-   this.persona2 = this.add.image(60,50, "persona2");
+   this.persona2 = this.physics.add.image(60,50, "persona2");
+   this.persona2.setCollideWorldBounds(true);
    this.input.keyboard.on("keydown_RIGHT", () => {
        //aqui elegimos una tecla paraque nuestra imagen se mueva de 1 en 1 en el lienzo
        this.persona2.setAngle(90);
