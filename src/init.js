@@ -1,5 +1,4 @@
-import SceneA from './scenes/SceneA.js';
-import Bootloader from './Bootloader.js';
+import SceneA from './SceneA.js';
 const config = {
     width: 620,
     height: 360,
@@ -7,10 +6,14 @@ const config = {
     parent: "container",
     type: Phaser.AUTO,
     physics: {
-        default: "arcade"
+        default: "arcade",
+        arcade: {
+        }
     },
     // el backgroundColor es para generar un color a nuestro lienzo
-    scene: [Bootloader, SceneA]
+    scene: [SceneA]
 }
 // gracias a scene se pinta el lienzo en el html 
-new Phaser.Game(config);
+var player;
+var cursors;
+var game = new Phaser.Game(config);
